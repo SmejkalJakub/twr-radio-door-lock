@@ -10,12 +10,12 @@ void bc_radio_node_on_state_set(uint64_t *id, uint8_t state_id, bool *state)
 {
     (void) id;
 
-    if (state_id == BC_RADIO_NODE_STATE_RELAY_MODULE_0)
+    if (state_id == BC_RADIO_NODE_STATE_POWER_MODULE_RELAY)
     {
         bc_led_blink(&led, 2);
-        bc_module_relay_set_state(&relay, *state);
+        bc_module_power_relay_set_state(*state);
 
-        bc_radio_pub_state(BC_RADIO_PUB_STATE_RELAY_MODULE_0, state);
+        bc_radio_pub_state(BC_RADIO_NODE_STATE_POWER_MODULE_RELAY, state);
     }
 }
 
@@ -28,8 +28,8 @@ void application_init(void)
     bc_led_init(&led, BC_GPIO_LED, false, false);
     bc_led_set_mode(&led, BC_LED_MODE_ON);
 
-    // Initialize Relay Module
-    bc_module_relay_init(&relay, 0x3B);
+    // Initialize Power Module
+    bc_module_power_init();
 
     bc_radio_init(BC_RADIO_MODE_NODE_LISTENING);
     bc_radio_pairing_request("wireless-lock", VERSION);
