@@ -2,9 +2,9 @@
 
 # Firmware for locking doors with magnetic lock
 
-[![Travis](https://img.shields.io/travis/bigclownprojects/bcf-radio-netio-lcd-monitor/master.svg)](https://travis-ci.org/bigclownprojects/bcf-radio-netio-lcd-monitor)
-[![Release](https://img.shields.io/github/release/bigclownprojects/bcf-radio-netio-lcd-monitor.svg)](https://github.com/bigclownprojects/bcf-radio-netio-lcd-monitor/releases)
-[![License](https://img.shields.io/github/license/bigclownprojects/bcf-radio-netio-lcd-monitor.svg)](https://github.com/bigclownprojects/bcf-radio-netio-lcd-monitor/blob/master/LICENSE)
+[![Travis](https://img.shields.io/travis/bigclownprojects/bcf-radio-door-lock/master.svg)](https://travis-ci.org/bigclownprojects/bcf-radio-door-lock)
+[![Release](https://img.shields.io/github/release/bigclownprojects/bcf-radio-door-lock.svg)](https://github.com/bigclownprojects/bcf-radio-door-lock/releases)
+[![License](https://img.shields.io/github/license/bigclownprojects/bcf-radio-door-lock.svg)](https://github.com/bigclownprojects/bcf-radio-door-lock/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/follow/hardwario_en.svg?style=social&label=Follow)](https://twitter.com/hardwario_en)
 
 This repository contains firmware Smart Door Lock for [Core Module](https://shop.bigclown.com/core-module).
